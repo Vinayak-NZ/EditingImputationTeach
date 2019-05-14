@@ -4,8 +4,8 @@ author: "Office for National Statistics"
 date: "Version 1"
 output: 
   html_document:
-    theme: united
-    highlight: tango
+    theme: flatly
+    highlight: pygments
     code_folding: hide
     df_print: paged
     toc: true
@@ -57,9 +57,8 @@ Editing and imputing are both methods of data processing. Editing refers to the 
 The rationale for editing and imputing data is highlighted by presenting the challenges in data collection, how these can influence the quality of the statistical product, and introducing editing and imputing as a means of managing the impact of these data collection issues on quality.
 
 ### Perfect data vs. Actual data
-In statistics, data is collected from units, which are commonly individuals, households or businesses. These collection units will provide values for a range of items/ variables. The purpose of data collection is to answer a question about a target population and target concept. As a result, it is intended that units and variables in the dataset are representative of the target population and target concept respectively.  
-  
-  The perfect dataset is one where the design has captured a representative set of units, the variables have mapped out the target concept accurately, and all units have responded to all items in the collection instrument correctly. With a perfect dataset, the researcher can make accurate inferences about the target population and concept, and in turn answer the question that prompted the data collection.  
+In statistics, data is collected from units, which are commonly individuals, households or businesses. These collection units will provide values for a range of items/ variables. The purpose of data collection is to answer a question about a target population and target concept. As a result, it is intended that units and variables in the dataset are representative of the target population and target concept respectively.    
+The perfect dataset is one where the design has captured a representative set of units, the variables have mapped out the target concept accurately, and all units have responded to all items in the collection instrument correctly. With a perfect dataset, the researcher can make accurate inferences about the target population and concept, and in turn answer the question that prompted the data collection.  
   
 In reality there are challenges in data collection, which impede the ability to capture a target population and concept. The representativeness of the target population and the measurement of the target concept can be impacted by:  
 * Including units outside the target population  
@@ -194,8 +193,6 @@ Error sources may negatively impact the quality of the statistical product. By i
   
 Correcting erroneous responses and filling in missing values helps manage the impact of error sources. By accounting for missingness and incorrect responses, researchers reduce statistical error. Decreasing the uncertainty in the estimates, and better representing the truth improves the quality of the data and helps meet customer needs, which in turn maintain organisational reputation. 
 
-[DIMENSIONS OF DATA QUALITY]
-
 ## What does editing and imputation look like?
 At a high level, editing and imputation is the process of correcting erroneous data and filling in missing data. The process of modifying data, by either changing incorrect values or filling in missing values, can be broken down into the following three phases:  
 
@@ -263,7 +260,7 @@ Table 2 details the methods of unit and variable selection.
 #### What to consider?
 In the amend phase, the objective is to change the data values in order to improve data quality. Units/ variables that were flagged in the select phase are amended to produce a transformed dataset, which should better meet the needs of customers.  
   
-![](Select.png)  
+![](Amend.png)  
   
 A key objective of the amend phase is to use the appropriate methods and tools to transform the dataset. Most of the considerations in the amend phase will inform analysts on the appropriate methods and tools to use for amending the data.   
   
