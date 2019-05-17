@@ -10,10 +10,13 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
+github-repo: Vinayak-NZ/EditingImputationTeach
+cover-image: "images/cover.png"
 description: "This is a guide for editing and imputing datasets."
 ---
 
 ```{r setup, include=FALSE}
+
 knitr::opts_chunk$set(echo = TRUE)
 library(shiny)
 library(knitr)
@@ -21,7 +24,7 @@ library(mice)
 library(plyr)
 
 #Load data
-DataK<-read.csv("adult.csv")
+DataK<-read.csv("data/adult.csv")
 
 #Separate males and females to generate income
 DataMale<-DataK[DataK$sex=="Male",]
@@ -42,6 +45,12 @@ DataK_editSub<-rename(DataK_editSub,c("age"="Age","IncomeN"="Income","SexN"="Sex
 ```
 
 # Introduction
+
+<p align="center">
+![](images/cover2.png)
+  <img />
+</p>
+
 
 Editing and imputation are both methods of data processing. Editing refers to the detection and correction of errors in the data, whilst imputation is a method of correcting errors in a dataset [@deWaal]. This document addresses the following questions:  
   

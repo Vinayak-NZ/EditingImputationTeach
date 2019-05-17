@@ -2,8 +2,10 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: subsection
       before: |
-        <li><a href="./">Office for National Statistics</a></li>
+        <li><img src="images/ONS.png"></li>
+        <li><a href="https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts">Office for National Statistics</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
@@ -14,4 +16,5 @@ bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
   keep_tex: yes
-bookdown::epub_book: default
+bookdown::epub_book:
+  stylesheet: style.css
