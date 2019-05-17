@@ -47,7 +47,7 @@ DataK_editSub<-rename(DataK_editSub,c("age"="Age","IncomeN"="Income","SexN"="Sex
 # Introduction
 
 <p align="center">
-![](images/cover2.png)
+![](images/cover.png)
   <img />
 </p>
 
